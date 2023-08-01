@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Images</title>
+    <style>
+        body{
+            background-image: url('images/pattern004.png');
+        }
+        div.square{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        #s1{
+            background-color: greenyellow;
+        }
+
+        #s2{
+            background-image: linear-gradient(to Bottom, blue, purple);
+        }
+
+        #s3{
+            background-image: url('images/pattern001.png');
+        }
+
+        #s4{
+            background-image: url('images/pattern003.png');
+            background-repeat: repeat; /*can be with repeat or not */
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="square" id="s1">
+    
+    </div>
+    <div class="square" id="s2">
+
+    </div>
+    <div class="square" id="s3">
+
+    </div>
+    <div class="square" id="s4">
+
+    </div>
+</body>
+</html>
