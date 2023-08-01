@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic medias</title>
+    <style>
+      body{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <h1>Test with dynamic images</h1>
+    <picture>
+        <source media="(max-width: 750px )" srcset="images/picp.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/picm.png" type="image/png">
+        <img src="images/picg.png" alt="Alternate picture">
+    </picture>
+    <h1>Test with dynamic medias</h1>
+    <p>Miami Vice by Yunk Vino</p>
+    <audio src="medias/miami-vice-yunk.mp3" controls></audio> 
+    <!--You can use: autoplay, loop ... after the tag control-->
+    <!--Sources compatibles: MP3, WAV, OGG-->
+    <!--You also can do the source media like the following-->
+
+     <!--
+    <audio preload="metadata" controls>  
+        == preload has: metadata - load just the media's info // auto - just finish the load after all data has beeing downloaded // none - don't load any audio
+
+        <source src="medias/miami-vice-yunk.mp3" type="audio/mpeg">
+        <source src="medias/miami-vice-yunk.wav" type="audio/wav">
+        <source src="medias/miami-vice-yunk.ogg" type="audio/ogg">
+        <p>Unfortunately you browser can't load the audio !</p>
+
+    </audio> 
+
+    This command is also used to load audios but trying to load every single format per time...
+    -->
+    
+</body>
+</html>
