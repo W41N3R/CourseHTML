@@ -30,7 +30,8 @@ div{
 }
 
 section#bug{
-    background: black url('imagens/background001.jpg') center center no-repeat fixed;
+    background: black url('imagens/background001.jpg') right center no-repeat fixed;
+    background-size: cover;
 }
 
 div.d2{
@@ -42,8 +43,9 @@ div.d2{
 }
 
 section#book{
-    background: black url('imagens/background002.jpg') center center no-repeat fixed;
+    background: black url('imagens/background002.jpg') right center no-repeat fixed;
     padding-top: 30px;
+    background-size: cover;
 } 
 
 div.d3{
