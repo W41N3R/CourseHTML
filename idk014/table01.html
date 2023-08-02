@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying tables</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        tr.color{
+            background-color: limegreen;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        td.high{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Just testing some tables</h1>
+    <!-- Tables hierarchy (simple table)
+        Table > Table row > Table header > Table data  
+    -->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td class="high">C1</td>
+        </tr>
+        <tr class="color">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td >B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>

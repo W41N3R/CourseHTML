@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying tables</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .sub{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" class="sub" scope="col">Area</th>
+                <th rowspan="2" class="sub">Subject</th>
+                <th colspan="2" class="sub">Score</th>
+                <th rowspan="2" class="sub">Mean</th>
+            </tr>
+            <tr>
+                <th class="sub">Grade 1</th>
+                <th class="sub">Grade 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exact-sciences</th>
+                <td>Math</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Physic</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="sub">Exact-sciences Mean</th>
+                <th class="sub" >0.0</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Human-sciences</th>
+                <td>History</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geograph</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="sub">Human-sciences Mean</th>
+                <th class="sub" >0.0</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
