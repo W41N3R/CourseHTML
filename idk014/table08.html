@@ -18,14 +18,23 @@
         .sub{
             background-color: lightgray;
         }
+
+        .yellow{
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col>
+            <col>
+            <col class="yellow">
+        </colgroup>
         <thead>
             <tr>
                 <th rowspan="2" class="sub" scope="col">Area</th>
-                <th rowspan="2" class="sub">Subject</th>
+                <th rowspan="2" class="sub" scope="colgroup">Subject</th>
                 <th colspan="2" class="sub">Score</th>
                 <th rowspan="2" class="sub">Mean</th>
             </tr>
