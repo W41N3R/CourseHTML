@@ -1,14 +1,38 @@
 #screen{
-    width: 270px;
-    height: 475px;
-    
+    position: absolute;
+    width: 224px;
+    height: 395px;
+    left: 48px;
+    top: 67px;
 }
 
+
+body{
+    background: url('pacote-d013/imagens/fundo-madeira.jpg') center no-repeat fixed;
+    background-size: cover;
+}
 /* 
     Shorthand - background
     color > image > position > repeat > [size] > attachment
 */
 
-/* #phone{
-    background: black url('pacote-d013/imagens/frame-iphone.png') no-repeat;
-} */
+#phone{
+    display: inline-block;
+    position: relative;
+    background: url('pacote-d013/imagens/frame-iphone.png') center center no-repeat ;
+    background-size: contain;
+    width: 320px;
+    height: 525px;
+}
+
+section{
+    display: inline-block;
+    position: absolute;
+    left: 80vw;
+}
+
+.but{
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+}
