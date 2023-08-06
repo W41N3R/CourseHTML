@@ -18,11 +18,12 @@ body{
 
 #phone{
     display: inline-block;
-    position: relative;
+    position: absolute;
     background: url('pacote-d013/imagens/frame-iphone.png') center center no-repeat ;
     background-size: contain;
     width: 320px;
     height: 525px;
+    left: 20vw;
 }
 
 section{
@@ -35,4 +36,9 @@ section{
     width: 50px;
     height: 50px;
     border-radius: 14px;
+}
+
+footer > div{
+    position: absolute;
+    top: 90vh;
 }
