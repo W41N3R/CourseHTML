@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /* General Settings*/
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        h1{
+            padding: 10px;
+            color: white;
+        }
+
+        /* Landscape Settings*/
+        @media screen and (orientation: landscape){
+
+            body{
+                background-image: url('../images/cev-landscape.jpg');
+                background-position: left bottom;
+            }
+        }
+
+        /* Portrait Settings*/
+        @media screen and (orientation:portrait ) {
+            
+            body{
+                background-image: url('../images/cev-portrait.jpg');
+                background-position: center bottom;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Change your device's orientation</h1>
+</body>
+</html>
