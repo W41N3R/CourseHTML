@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header h1{
+    text-align: center;
+}
+
+menu ul{
+    list-style-type: none;
+
+}
+
+article{
+    text-align: justify;
+    max-width: 750px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
