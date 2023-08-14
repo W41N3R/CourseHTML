@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/mediasq.css">
 </head>
-<body>
+<body onresize="changeSize()">
     <header>
         <h1>Just trying something</h1>
-        <menu>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">News</a></li>
@@ -27,8 +31,26 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae et obcaecati dolorem eius totam recusandae impedit porro, expedita ratione adipisci delectus reiciendis velit omnis nam, eos provident voluptatum repellendus ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere obcaecati commodi sed laudantium sint! Eligendi dolor minus optio sunt aliquam blanditiis repellat suscipit ratione ex, fuga necessitatibus provident illum amet!</p>
 
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab soluta repudiandae eaque. Incidunt laboriosam recusandae facere quos, libero, officia impedit asperiores voluptas alias delectus esse blanditiis saepe iusto inventore excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, exercitationem praesentium illo, eaque voluptatum tempora iure ipsa beatae laboriosam voluptatem ipsam, aut alias voluptas quisquam quas expedita quod placeat? Vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit accusantium quos voluptates! Reprehenderit, dolor veritatis alias illum itaque impedit iusto aliquam reiciendis quis temporibus ducimus recusandae nobis fugiat, animi quos!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sint delectus voluptatum. Ea vel maxime in non soluta odio id delectus iusto eos? Id doloribus unde corporis non vero quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, delectus fuga! Eligendi consequuntur, cupiditate nostrum tempora at quis eum alias nihil dignissimos exercitationem ratione laborum fugit minus tempore ipsa quasi.</p>
             
         </article>
     </main>
+    <script>
+        function changeSize(){
+            if (window.innerWidth >= 768 ){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

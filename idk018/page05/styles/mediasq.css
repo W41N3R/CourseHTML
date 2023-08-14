@@ -1,0 +1,27 @@
+/* Typical Device Breakpoint
+
+Small screens: at 600px
+Phone: 601px at 768px
+Tablet: 769px at 992px
+Desktop: 992px at 1200px
+Large screens: above 1201px
+
+*/
+
+@media screen and (min-width: 768px) {
+    #burger{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main{
+        max-width: 900px;
+    }
+}
