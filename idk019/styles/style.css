@@ -37,19 +37,88 @@ section{
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.437);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
-#image{
+p{
+    margin-bottom: 10px;
+}
+
+#image{ 
+    display: block;
     background: green url(../images/pexels-ayşenaz-bilgin-17767676.jpg) no-repeat center center;
     background-size: cover;
     height: 300px;
 }
 
 #form{
+    display: block;
     padding: 10px;
 }
 
 h1{
     padding: 8px;
-    padding-left: 10px;
+    
+}
+
+.but{
+    background-color: #309fb8;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.but span{
+    font-size: 2em;
+    padding: 5px;
+    color: white;
+}
+
+.but input{
+    width: calc(100% - 55px);
+    transform: translateY(-10px);
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.but input:focus-within{
+    background-color: #aaddf8;
+}
+
+#log {
+    display: block;
+    width: 100%;
+    height: 35px;
+    background-color: #309fb8 ;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+#log:hover{
+    border: 1px solid black;
+    background-color: #80aac0;
+    color: black;
+}
+
+#forg{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 35px;   
+    color: white; 
+    background-color: #309fb8;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+#forg:hover{
+    border: 1px solid black;
+    background-color: #80aac0;
+    color: black;
 }

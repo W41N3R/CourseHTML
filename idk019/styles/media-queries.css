@@ -1,0 +1,54 @@
+/* Typical Device Breakpoint
+
+Small screens: at 600px
+Phone: 601px at 768px
+Tablet: 769px at 992px
+Desktop: 992px at 1200px
+Large screens: above 1201px
+
+*/
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    section{
+        min-width: 700px;
+        max-width: 840px;
+    }
+
+    #image{
+        float: left;
+        height: 100%;
+        width: 35%;
+    }
+
+    #form{
+        float: right;
+        width: 65%;
+    }
+
+    h1{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    section{
+        width: 80vw;
+    }
+
+    #image{
+        float: left;
+        height: 100%;
+        width: 45%;
+    }
+
+    #form{
+        float: right;
+        width: 55%;
+    }
+
+    h1{
+        text-align: center;
+    }
+}
